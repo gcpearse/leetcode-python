@@ -59,3 +59,9 @@ def test_length_of_last_word():
   assert length_of_last_word("   fly me   to   the moon  ") == 4
   assert length_of_last_word("luffy is still joyboy") == 6
   assert length_of_last_word("a") == 1
+
+
+def test_plus_one():
+  assert plus_one([1, 2, 3]) == [1, 2, 4]
+  assert plus_one([4, 3, 2, 1]) == [4, 3, 2, 2]
+  assert plus_one([9]) == [1, 0]
