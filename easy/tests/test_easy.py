@@ -7,6 +7,7 @@ from find_the_index_of_the_first_occurrence_in_a_string import str_str
 from search_input_position import search_insert
 from length_of_last_word import length_of_last_word
 from plus_one import plus_one
+from best_time_to_buy_and_sell_stock import max_profit
 
 
 def test_two_sum():
@@ -65,3 +66,8 @@ def test_plus_one():
   assert plus_one([1, 2, 3]) == [1, 2, 4]
   assert plus_one([4, 3, 2, 1]) == [4, 3, 2, 2]
   assert plus_one([9]) == [1, 0]
+
+
+def test_max_profit():
+  assert max_profit([7, 1, 5, 3, 6, 4]) == 5
+  assert max_profit([7, 6, 4, 3, 1]) == 0
