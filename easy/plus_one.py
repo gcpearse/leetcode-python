@@ -3,11 +3,11 @@ def plus_one(digits: list[int]) -> list[int]:
   return list(map(str_to_int, list(str(int("".join(map(int_to_str, digits))) + 1)))) 
   
 
-def int_to_str(n):
+def int_to_str(n: int):
   return str(n)
 
 
-def str_to_int(s):
+def str_to_int(s: str):
   return int(s)
 
 
