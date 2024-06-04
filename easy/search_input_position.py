@@ -1,4 +1,5 @@
 def search_insert(nums: list[int], target: int) -> int:
+
   if target <= nums[0]:
     return 0
   elif target > nums[-1]:
