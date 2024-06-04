@@ -1,6 +1,12 @@
 from two_sum import two_sum
 from palindrome_number import is_palindrome
 from roman_to_integer import roman_to_int
+from longest_common_prefix import longest_common_prefix
+from valid_parentheses import is_valid
+from find_the_index_of_the_first_occurrence_in_a_string import str_str
+from search_input_position import search_insert
+from length_of_last_word import length_of_last_word
+from plus_one import plus_one
 
 
 def test_two_sum():
@@ -19,3 +25,37 @@ def test_roman_to_int():
   assert roman_to_int("III") == 3
   assert roman_to_int("LVIII") == 58
   assert roman_to_int("MCMXCIV") == 1994
+
+
+def test_longest_common_prefix():
+  assert longest_common_prefix(["flower", "flow", "flight"]) == "fl"
+  assert longest_common_prefix(["dog", "racecar", "car"]) == ""
+  assert longest_common_prefix(["cir", "car"]) == "c"
+
+
+def test_is_valid():
+  assert is_valid("()") == True
+  assert is_valid("()[]{}") == True
+  assert is_valid("(]") == False
+  assert is_valid("]") == False
+  assert is_valid("){") == False
+  assert is_valid("([}}])") == False
+
+
+def test_str_str():
+  assert str_str("sadbutsad", "sad") == 0
+  assert str_str("leetcode", "leeto") == -1
+
+
+def test_search_insert():
+  assert search_insert([1, 3, 5, 6], 5) == 2
+  assert search_insert([1, 3, 5, 6], 2) == 1
+  assert search_insert([1, 3, 5, 6], 7) == 4
+  assert search_insert([1], 1) == 0
+
+
+def test_length_of_last_word():
+  assert length_of_last_word("Hello World") == 5
+  assert length_of_last_word("   fly me   to   the moon  ") == 4
+  assert length_of_last_word("luffy is still joyboy") == 6
+  assert length_of_last_word("a") == 1
