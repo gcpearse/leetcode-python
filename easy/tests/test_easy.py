@@ -8,6 +8,7 @@ from search_input_position import search_insert
 from length_of_last_word import length_of_last_word
 from plus_one import plus_one
 from best_time_to_buy_and_sell_stock import max_profit
+from valid_palindrome import is_valid_palindrome
 
 
 def test_two_sum():
@@ -71,3 +72,10 @@ def test_plus_one():
 def test_max_profit():
   assert max_profit([7, 1, 5, 3, 6, 4]) == 5
   assert max_profit([7, 6, 4, 3, 1]) == 0
+
+
+def test_is_valid_palindrome():
+  assert is_valid_palindrome("A man, a plan, a canal: Panama") == True
+  assert is_valid_palindrome("race a car") == False
+  assert is_valid_palindrome(" ") == True
+  assert is_valid_palindrome("ab_a") == True
