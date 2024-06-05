@@ -9,6 +9,7 @@ from length_of_last_word import length_of_last_word
 from plus_one import plus_one
 from best_time_to_buy_and_sell_stock import max_profit
 from valid_palindrome import is_valid_palindrome
+from single_number import single_number
 
 
 def test_two_sum():
@@ -79,3 +80,9 @@ def test_is_valid_palindrome():
   assert is_valid_palindrome("race a car") == False
   assert is_valid_palindrome(" ") == True
   assert is_valid_palindrome("ab_a") == True
+
+
+def test_single_number():
+  assert single_number([2, 2, 1]) == 1
+  assert single_number([4, 1, 2, 1, 2]) == 4
+  assert single_number([1]) == 1
