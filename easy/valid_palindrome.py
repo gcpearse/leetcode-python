@@ -2,7 +2,9 @@ import re
 
 
 def is_valid_palindrome(s: str) -> bool:
+
   phrase = re.sub(r"[\W_]", "", s).lower()
+
   return phrase == phrase[::-1]
 
 
