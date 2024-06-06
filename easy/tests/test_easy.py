@@ -11,6 +11,7 @@ from best_time_to_buy_and_sell_stock import max_profit
 from valid_palindrome import is_valid_palindrome
 from single_number import single_number
 from excel_sheet_column_title import convert_to_title
+from majority_element import majority_element
 
 
 def test_two_sum():
@@ -93,3 +94,8 @@ def test_convert_to_title():
   assert convert_to_title(1) == "A"
   assert convert_to_title(28) == "AB"
   assert convert_to_title(701) == "ZY"
+
+
+def test_majority_element():
+  assert majority_element([3, 2, 3]) == 3
+  assert majority_element([2, 2, 1, 1, 1, 2, 2]) == 2
