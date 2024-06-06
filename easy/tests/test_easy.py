@@ -10,6 +10,7 @@ from plus_one import plus_one
 from best_time_to_buy_and_sell_stock import max_profit
 from valid_palindrome import is_valid_palindrome
 from single_number import single_number
+from excel_sheet_column_title import convert_to_title
 
 
 def test_two_sum():
@@ -86,3 +87,9 @@ def test_single_number():
   assert single_number([2, 2, 1]) == 1
   assert single_number([4, 1, 2, 1, 2]) == 4
   assert single_number([1]) == 1
+
+
+def test_convert_to_title():
+  assert convert_to_title(1) == "A"
+  assert convert_to_title(28) == "AB"
+  assert convert_to_title(701) == "ZY"
