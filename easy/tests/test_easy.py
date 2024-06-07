@@ -13,6 +13,7 @@ from single_number import single_number
 from excel_sheet_column_title import convert_to_title
 from majority_element import majority_element
 from excel_sheet_column_number import title_to_number
+from contains_duplicate import contains_duplicate
 
 
 def test_two_sum():
@@ -106,3 +107,9 @@ def test_title_to_number():
   assert title_to_number("A") == 1
   assert title_to_number("AB") == 28
   assert title_to_number("ZY") == 701
+
+
+def test_contains_duplicate():
+  assert contains_duplicate([1, 2, 3, 1]) == True
+  assert contains_duplicate([1, 2, 3, 4]) == False
+  assert contains_duplicate([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]) == True
