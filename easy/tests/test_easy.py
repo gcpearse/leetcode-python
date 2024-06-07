@@ -14,6 +14,7 @@ from excel_sheet_column_title import convert_to_title
 from majority_element import majority_element
 from excel_sheet_column_number import title_to_number
 from contains_duplicate import contains_duplicate
+from power_of_two import is_power_of_two
 
 
 def test_two_sum():
@@ -113,3 +114,9 @@ def test_contains_duplicate():
   assert contains_duplicate([1, 2, 3, 1]) == True
   assert contains_duplicate([1, 2, 3, 4]) == False
   assert contains_duplicate([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]) == True
+
+
+def test_is_power_of_two():
+  assert is_power_of_two(1) == True
+  assert is_power_of_two(16) == True
+  assert is_power_of_two(3) == False
