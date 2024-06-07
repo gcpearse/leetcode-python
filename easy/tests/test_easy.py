@@ -15,6 +15,7 @@ from majority_element import majority_element
 from excel_sheet_column_number import title_to_number
 from contains_duplicate import contains_duplicate
 from power_of_two import is_power_of_two
+from valid_anagram import is_anagram
 
 
 def test_two_sum():
@@ -120,3 +121,8 @@ def test_is_power_of_two():
   assert is_power_of_two(1) == True
   assert is_power_of_two(16) == True
   assert is_power_of_two(3) == False
+
+
+def test_is_anagram():
+  assert is_anagram("anagram", "nagaram") == True
+  assert is_anagram("rat", "car") == False
