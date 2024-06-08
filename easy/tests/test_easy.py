@@ -16,6 +16,8 @@ from excel_sheet_column_number import title_to_number
 from contains_duplicate import contains_duplicate
 from power_of_two import is_power_of_two
 from valid_anagram import is_anagram
+from add_digits import add_digits
+from missing_number import missing_number
 
 
 def test_two_sum():
@@ -126,3 +128,14 @@ def test_is_power_of_two():
 def test_is_anagram():
   assert is_anagram("anagram", "nagaram") == True
   assert is_anagram("rat", "car") == False
+
+
+def test_add_digits():
+  assert add_digits(38) == 2
+  assert add_digits(0) == 0
+
+
+def test_missing_number():
+  assert missing_number([3, 0, 1]) == 2
+  assert missing_number([0, 1]) == 2
+  assert missing_number([9, 6, 4, 2, 3, 5, 7, 0, 1]) == 8
