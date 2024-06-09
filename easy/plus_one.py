@@ -1,14 +1,6 @@
 def plus_one(digits: list[int]) -> list[int]:
 
-  return list(map(str_to_int, list(str(int("".join(map(int_to_str, digits))) + 1)))) 
-  
-
-def int_to_str(n: int):
-  return str(n)
-
-
-def str_to_int(s: str):
-  return int(s)
+  return list(map(lambda s: int(s), list(str(int("".join(map(lambda n: str(n), digits))) + 1))))
 
 
 # You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. 
