@@ -3,7 +3,7 @@ def add_digits(num: int) -> int:
   if num < 10:
     return num
 
-  return add_digits(sum(map(lambda x: int(x), list(str(num)))))
+  return add_digits(sum(map(lambda s: int(s), list(str(num)))))
 
 
 # Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.
