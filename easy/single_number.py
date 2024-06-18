@@ -1,11 +1,12 @@
-def single_number(nums: list[int]) -> int:
+class Solution:
+  def single_number(self, nums: list[int]) -> int:
 
-  result = 0 
-  
-  for num in nums:
-    result ^= num
+    result = 0 
     
-  return result
+    for num in nums:
+      result ^= num
+      
+    return result
 
 
 # Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.

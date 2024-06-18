@@ -1,18 +1,19 @@
-def length_of_last_word(s: str) -> int:
+class Solution:
+  def length_of_last_word(self, s: str) -> int:
 
-  stripped = s.strip()
+    stripped = s.strip()
 
-  length = 0
-  i = len(stripped) - 1
+    length = 0
+    i = len(stripped) - 1
 
-  while i >= 0:
-    if stripped[i] == " ":
-      break
-    else:
-      length += 1
-    i -= 1
+    while i >= 0:
+      if stripped[i] == " ":
+        break
+      else:
+        length += 1
+      i -= 1
 
-  return length
+    return length
 
 
 # Given a string s consisting of words and spaces, return the length of the last word in the string.

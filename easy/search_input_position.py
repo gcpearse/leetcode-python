@@ -1,13 +1,14 @@
-def search_insert(nums: list[int], target: int) -> int:
+class Solution:
+  def search_insert(self, nums: list[int], target: int) -> int:
 
-  if target <= nums[0]:
-    return 0
-  elif target > nums[-1]:
-    return len(nums)
-  else:
-    for i in range(len(nums) - 1):
-      if nums[i] <= target <= nums[i + 1]:
-        return i + 1
+    if target <= nums[0]:
+      return 0
+    elif target > nums[-1]:
+      return len(nums)
+    else:
+      for i in range(len(nums) - 1):
+        if nums[i] <= target <= nums[i + 1]:
+          return i + 1
 
 
 # Given a sorted array of distinct integers and a target value, return the index if the target is found. 

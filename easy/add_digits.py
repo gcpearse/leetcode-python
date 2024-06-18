@@ -1,9 +1,10 @@
-def add_digits(num: int) -> int:
+class Solution:
+  def add_digits(self, num: int) -> int:
 
-  if num < 10:
-    return num
+    if num < 10:
+      return num
 
-  return add_digits(sum(map(lambda s: int(s), list(str(num)))))
+    return self.add_digits(sum(map(lambda s: int(s), list(str(num)))))
 
 
 # Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.

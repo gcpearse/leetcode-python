@@ -1,15 +1,16 @@
-def max_profit(prices: list[int]) -> int:
-  
-  profit = 0
-  smallest = prices[0]
+class Solution:
+  def max_profit(self, prices: list[int]) -> int:
+    
+    profit = 0
+    smallest = prices[0]
 
-  for i in range(1, len(prices)):
-    if prices[i] < smallest:
-      smallest = prices[i]
-    if prices[i] - smallest > profit:
-      profit = prices[i] - smallest
+    for i in range(1, len(prices)):
+      if prices[i] < smallest:
+        smallest = prices[i]
+      if prices[i] - smallest > profit:
+        profit = prices[i] - smallest
 
-  return profit
+    return profit
 
 
 # You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.

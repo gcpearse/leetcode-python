@@ -1,11 +1,12 @@
 import re
 
 
-def is_valid_palindrome(s: str) -> bool:
+class Solution:
+  def is_valid_palindrome(self, s: str) -> bool:
 
-  phrase = re.sub(r"[\W_]", "", s).lower()
+    phrase = re.sub(r"[\W_]", "", s).lower()
 
-  return phrase == phrase[::-1]
+    return phrase == phrase[::-1]
 
 
 # A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. 

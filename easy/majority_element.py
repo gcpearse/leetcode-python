@@ -1,12 +1,12 @@
 import math
 
-
-def majority_element(nums: list[int]) -> int:
-  
-  if len(nums) == 1:
-    return nums[0]
-  
-  return sorted(nums)[math.floor(len(nums) / 2)]
+class Solution:
+  def majority_element(self, nums: list[int]) -> int:
+    
+    if len(nums) == 1:
+      return nums[0]
+    
+    return sorted(nums)[math.floor(len(nums) / 2)]
 
 
 # Given an array nums of size n, return the majority element.

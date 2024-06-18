@@ -1,9 +1,10 @@
-def is_anagram(s: str, t: str) -> bool:
+class Solution:
+  def is_anagram(self, s: str, t: str) -> bool:
 
-  if len(s) != len(t):
-    return False
-  
-  return "".join(sorted(s)) == "".join(sorted(t))
+    if len(s) != len(t):
+      return False
+    
+    return "".join(sorted(s)) == "".join(sorted(t))
 
 
 # Given two strings s and t, return true if t is an anagram of s, and false otherwise.

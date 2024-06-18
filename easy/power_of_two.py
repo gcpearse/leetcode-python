@@ -1,14 +1,15 @@
-def is_power_of_two(n: int) -> bool:
-  
-  i = 0
+class Solution:
+  def is_power_of_two(self, n: int) -> bool:
+    
+    i = 0
 
-  while True:
-    if (2 ** i <= n):
-      if (2 ** i == n):
-        return True
-    else:
-      return False
-    i += 1
+    while True:
+      if (2 ** i <= n):
+        if (2 ** i == n):
+          return True
+      else:
+        return False
+      i += 1
 
 
 # Given an integer n, return true if it is a power of two. Otherwise, return false.

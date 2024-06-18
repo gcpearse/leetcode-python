@@ -1,24 +1,25 @@
-def roman_to_int(s: str) -> int:
-  
-  roman_values = {
-    "M": 1000,
-    "D": 500,
-    "C": 100,
-    "L": 50,
-    "X": 10,
-    "V": 5,
-    "I": 1
-  }
+class Solution:
+  def roman_to_int(self, s: str) -> int:
+    
+    roman_values = {
+      "M": 1000,
+      "D": 500,
+      "C": 100,
+      "L": 50,
+      "X": 10,
+      "V": 5,
+      "I": 1
+    }
 
-  result = 0
+    result = 0
 
-  for i in range(len(s) - 1):
-    if roman_values[s[i]] >= roman_values[s[i + 1]]:
-      result += roman_values[s[i]]
-    else:
-      result -= roman_values[s[i]]
+    for i in range(len(s) - 1):
+      if roman_values[s[i]] >= roman_values[s[i + 1]]:
+        result += roman_values[s[i]]
+      else:
+        result -= roman_values[s[i]]
 
-  return result + roman_values[s[-1]]
+    return result + roman_values[s[-1]]
 
 
 # Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.

@@ -1,9 +1,10 @@
-def two_sum(nums: list[int], target: int) -> list[int]:
+class Solution:
+  def two_sum(self, nums: list[int], target: int) -> list[int]:
 
-  for i in range(len(nums)):
-    for j in range(len(nums)):
-      if nums[i] + nums[j] == target and i != j:
-        return [i, j]
+    for i in range(len(nums)):
+      for j in range(len(nums)):
+        if nums[i] + nums[j] == target and i != j:
+          return [i, j]
 
 
 # Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.

@@ -1,22 +1,23 @@
-def is_valid(s: str) -> bool:
+class Solution:
+  def is_valid(self, s: str) -> bool:
 
-  pairs = {
-    "(": ")",
-    "[": "]",
-    "{": "}"
-  }
+    pairs = {
+      "(": ")",
+      "[": "]",
+      "{": "}"
+    }
 
-  stack = []
+    stack = []
 
-  for char in s:
-    if char in pairs.keys():
-      stack.append(char)
-    elif len(stack) > 0 and pairs[stack[-1]] == char:
-      stack.pop()
-    else:
-      return False
+    for char in s:
+      if char in pairs.keys():
+        stack.append(char)
+      elif len(stack) > 0 and pairs[stack[-1]] == char:
+        stack.pop()
+      else:
+        return False
 
-  return len(stack) == 0
+    return len(stack) == 0
 
 
 # Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.

@@ -1,6 +1,7 @@
-def plus_one(digits: list[int]) -> list[int]:
+class Solution:
+  def plus_one(self, digits: list[int]) -> list[int]:
 
-  return list(map(lambda s: int(s), list(str(int("".join(map(lambda n: str(n), digits))) + 1))))
+    return list(map(lambda s: int(s), list(str(int("".join(map(lambda n: str(n), digits))) + 1))))
 
 
 # You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. 
