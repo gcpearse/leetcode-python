@@ -26,6 +26,7 @@ import reverse_string
 import reverse_vowels_of_a_string
 import intersection_of_two_arrays
 import valid_perfect_square
+import ransom_note
 
 
 def test_two_sum():
@@ -287,3 +288,12 @@ def test_is_perfect_square():
 
   assert solution.is_perfect_square(16) == True
   assert solution.is_perfect_square(14) == False
+
+
+def test_can_construct():
+
+  solution = ransom_note.Solution()
+
+  assert solution.can_construct("a", "b") == False
+  assert solution.can_construct("aa", "ab") == False
+  assert solution.can_construct("aa", "aab") == True
