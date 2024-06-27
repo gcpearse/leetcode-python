@@ -18,9 +18,11 @@ import power_of_two
 import valid_anagram
 import add_digits
 import missing_number
+import move_zeroes
 import word_pattern
 import power_of_three
 import power_of_four
+import reverse_string
 
 
 def test_two_sum():
@@ -164,6 +166,16 @@ def test_missing_number():
   assert solution.missing_number([9, 6, 4, 2, 3, 5, 7, 0, 1]) == 8
 
 
+def test_move_zeroes():
+  solution = move_zeroes.Solution()
+  nums_1 = [0, 1, 0, 3, 12]
+  solution.move_zeroes(nums_1)
+  assert nums_1 == [1, 3, 12, 0, 0]
+  nums_2 = [0]
+  solution.move_zeroes(nums_2)
+  assert nums_2 == [0]
+
+
 def test_word_pattern():
   solution = word_pattern.Solution()
   assert solution.word_pattern("abba", "dog cat cat dog") == True
@@ -185,3 +197,13 @@ def test_is_power_of_four():
   assert solution.is_power_of_four(16) == True
   assert solution.is_power_of_four(5) == False
   assert solution.is_power_of_four(1) == True
+
+
+def test_reverse_string():
+  solution = reverse_string.Solution()
+  s_1 = ["h", "e", "l", "l", "o"]
+  solution.reverse_string(s_1)
+  assert s_1 == ["o", "l", "l", "e", "h"]
+  s_2 = ["H", "a", "n", "n", "a", "h"]
+  solution.reverse_string(s_2)
+  assert s_2 == ["h", "a", "n", "n", "a", "H"]
