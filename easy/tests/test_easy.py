@@ -23,6 +23,7 @@ import word_pattern
 import power_of_three
 import power_of_four
 import reverse_string
+import reverse_vowels_of_a_string
 
 
 def test_two_sum():
@@ -259,3 +260,12 @@ def test_reverse_string():
   s_2 = ["H", "a", "n", "n", "a", "h"]
   solution.reverse_string(s_2)
   assert s_2 == ["h", "a", "n", "n", "a", "H"]
+
+
+def test_reverse_vowels():
+
+  solution = reverse_vowels_of_a_string.Solution()
+
+  assert solution.reverse_vowels("hello") == "holle"
+  assert solution.reverse_vowels("leetcode") == "leotcede"
+  assert solution.reverse_vowels("a.") == "a."
