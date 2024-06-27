@@ -4,8 +4,8 @@ class Solution:
     i = 0
 
     while True:
-      if (2 ** i <= n):
-        if (2 ** i == n):
+      if 2 ** i <= n:
+        if 2 ** i == n:
           return True
       else:
         return False
