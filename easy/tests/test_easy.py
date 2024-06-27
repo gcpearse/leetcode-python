@@ -18,6 +18,7 @@ import power_of_two
 import valid_anagram
 import add_digits
 import missing_number
+import word_pattern
 
 
 def test_two_sum():
@@ -139,3 +140,10 @@ def test_missing_number():
   assert missing_number.Solution().missing_number([3, 0, 1]) == 2
   assert missing_number.Solution().missing_number([0, 1]) == 2
   assert missing_number.Solution().missing_number([9, 6, 4, 2, 3, 5, 7, 0, 1]) == 8
+
+
+def test_word_pattern():
+  assert word_pattern.Solution().word_pattern("abba", "dog cat cat dog") == True
+  assert word_pattern.Solution().word_pattern("abba", "dog cat cat fish") == False
+  assert word_pattern.Solution().word_pattern("aaaa", "dog cat cat dog") == False
+  assert word_pattern.Solution().word_pattern("abba", "dog dog dog dog") == False
