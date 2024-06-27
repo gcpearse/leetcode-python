@@ -1,5 +1,6 @@
 import math
 
+
 class Solution:
   def reverse_string(self, s: list[str]) -> None:
 

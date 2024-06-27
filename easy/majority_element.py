@@ -1,5 +1,6 @@
 import math
 
+
 class Solution:
   def majority_element(self, nums: list[int]) -> int:
     
