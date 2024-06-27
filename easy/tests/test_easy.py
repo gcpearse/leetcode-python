@@ -19,6 +19,7 @@ import valid_anagram
 import add_digits
 import missing_number
 import word_pattern
+import power_of_three
 
 
 def test_two_sum():
@@ -147,3 +148,10 @@ def test_word_pattern():
   assert word_pattern.Solution().word_pattern("abba", "dog cat cat fish") == False
   assert word_pattern.Solution().word_pattern("aaaa", "dog cat cat dog") == False
   assert word_pattern.Solution().word_pattern("abba", "dog dog dog dog") == False
+
+
+def test_power_of_three():
+  assert power_of_three.Solution().is_power_of_three(27) == True
+  assert power_of_three.Solution().is_power_of_three(0) == False
+  assert power_of_three.Solution().is_power_of_three(-1) == False
+  assert power_of_three.Solution().is_power_of_three(9) == True
