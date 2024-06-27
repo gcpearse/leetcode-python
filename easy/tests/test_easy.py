@@ -28,6 +28,8 @@ import intersection_of_two_arrays
 import valid_perfect_square
 import ransom_note
 import first_unique_character_in_a_string
+import find_the_difference
+import is_subsequence
 
 
 def test_two_sum():
@@ -307,3 +309,11 @@ def test_first_uniq_char():
   assert solution.first_uniq_char("leetcode") == 0
   assert solution.first_uniq_char("loveleetcode") == 2
   assert solution.first_uniq_char("aabb") == -1
+
+
+def test_find_the_difference():
+
+  solution = find_the_difference.Solution()
+
+  assert solution.find_the_difference("abcd", "abcde") == "e"
+  assert solution.find_the_difference("", "y") == "y"
