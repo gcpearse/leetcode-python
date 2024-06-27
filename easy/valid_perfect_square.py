@@ -5,7 +5,7 @@ class Solution:
   def is_perfect_square(self, num: int) -> bool:
     
     left = 1
-    right = num
+    right = math.ceil(num / 2)
 
     while left <= right:
 
