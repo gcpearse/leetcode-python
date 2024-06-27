@@ -1,8 +1,5 @@
 class Solution:
   def is_subsequence(self, s: str, t: str) -> bool:
-
-    if len(s) == 0:
-      return True
     
     i = 0
     count = len(s)
