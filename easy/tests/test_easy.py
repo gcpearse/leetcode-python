@@ -25,6 +25,7 @@ import power_of_four
 import reverse_string
 import reverse_vowels_of_a_string
 import intersection_of_two_arrays
+import valid_perfect_square
 
 
 def test_two_sum():
@@ -278,3 +279,11 @@ def test_intersection():
 
   assert solution.intersection([1, 2, 2, 1], [2, 2]) == [2]
   assert solution.intersection([4, 9, 5], [9, 4, 9, 8, 4]) == [9, 4]
+
+
+def test_is_perfect_square():
+  
+  solution = valid_perfect_square.Solution()
+
+  assert solution.is_perfect_square(16) == True
+  assert solution.is_perfect_square(14) == False
