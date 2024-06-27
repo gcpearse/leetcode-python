@@ -27,6 +27,7 @@ import reverse_vowels_of_a_string
 import intersection_of_two_arrays
 import valid_perfect_square
 import ransom_note
+import first_unique_character_in_a_string
 
 
 def test_two_sum():
@@ -297,3 +298,12 @@ def test_can_construct():
   assert solution.can_construct("a", "b") == False
   assert solution.can_construct("aa", "ab") == False
   assert solution.can_construct("aa", "aab") == True
+
+
+def test_first_uniq_char():
+
+  solution = first_unique_character_in_a_string.Solution()
+
+  assert solution.first_uniq_char("leetcode") == 0
+  assert solution.first_uniq_char("loveleetcode") == 2
+  assert solution.first_uniq_char("aabb") == -1
