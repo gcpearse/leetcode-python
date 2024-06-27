@@ -317,3 +317,15 @@ def test_find_the_difference():
 
   assert solution.find_the_difference("abcd", "abcde") == "e"
   assert solution.find_the_difference("", "y") == "y"
+
+
+def test_is_subsequence():
+
+  solution = is_subsequence.Solution()
+
+  assert solution.is_subsequence("abc", "ahbgdc") == True
+  assert solution.is_subsequence("axc", "ahbgdc") == False
+  assert solution.is_subsequence("acb", "ahbgdc") == False
+  assert solution.is_subsequence("aaaaaa", "bbaaaa") == False
+  assert solution.is_subsequence("", "ahbgdc") == True
+  assert solution.is_subsequence("b", "abc") == True
