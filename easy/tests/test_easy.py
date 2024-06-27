@@ -24,6 +24,7 @@ import power_of_three
 import power_of_four
 import reverse_string
 import reverse_vowels_of_a_string
+import intersection_of_two_arrays
 
 
 def test_two_sum():
@@ -269,3 +270,11 @@ def test_reverse_vowels():
   assert solution.reverse_vowels("hello") == "holle"
   assert solution.reverse_vowels("leetcode") == "leotcede"
   assert solution.reverse_vowels("a.") == "a."
+
+
+def test_intersection():
+
+  solution = intersection_of_two_arrays.Solution()
+
+  assert solution.intersection([1, 2, 2, 1], [2, 2]) == [2]
+  assert solution.intersection([4, 9, 5], [9, 4, 9, 8, 4]) == [9, 4]
