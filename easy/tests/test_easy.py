@@ -32,6 +32,7 @@ import find_the_difference
 import is_subsequence
 import longest_palindrome
 import fizz_buzz
+import third_maximum_number
 
 
 def test_two_sum():
@@ -349,3 +350,12 @@ def test_fizz_buzz():
   assert solution.fizz_buzz(3) == ["1", "2", "Fizz"]
   assert solution.fizz_buzz(5) == ["1", "2", "Fizz", "4", "Buzz"]
   assert solution.fizz_buzz(15) == ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"]
+
+
+def test_third_max():
+
+  solution = third_maximum_number.Solution()
+
+  assert solution.third_max([3, 2, 1]) == 1
+  assert solution.third_max([1, 2]) == 2
+  assert solution.third_max([2, 2, 3, 1]) == 1
