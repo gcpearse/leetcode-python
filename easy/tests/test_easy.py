@@ -30,6 +30,7 @@ import ransom_note
 import first_unique_character_in_a_string
 import find_the_difference
 import is_subsequence
+import longest_palindrome
 
 
 def test_two_sum():
@@ -329,3 +330,12 @@ def test_is_subsequence():
   assert solution.is_subsequence("aaaaaa", "bbaaaa") == False
   assert solution.is_subsequence("", "ahbgdc") == True
   assert solution.is_subsequence("b", "abc") == True
+
+
+def test_longest_palindrome():
+
+  solution = longest_palindrome.Solution()
+
+  assert solution.longest_palindrome("abccccdd") == 7
+  assert solution.longest_palindrome("a") == 1
+  assert solution.longest_palindrome("ccc") == 3
