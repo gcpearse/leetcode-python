@@ -31,6 +31,7 @@ import first_unique_character_in_a_string
 import find_the_difference
 import is_subsequence
 import longest_palindrome
+import fizz_buzz
 
 
 def test_two_sum():
@@ -339,3 +340,12 @@ def test_longest_palindrome():
   assert solution.longest_palindrome("abccccdd") == 7
   assert solution.longest_palindrome("a") == 1
   assert solution.longest_palindrome("ccc") == 3
+
+
+def test_fizz_buzz():
+
+  solution = fizz_buzz.Solution()
+
+  assert solution.fizz_buzz(3) == ["1", "2", "Fizz"]
+  assert solution.fizz_buzz(5) == ["1", "2", "Fizz", "4", "Buzz"]
+  assert solution.fizz_buzz(15) == ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"]
