@@ -5,10 +5,9 @@ class Solution:
     count = len(s)
 
     for char in t:
-      if i < len(s):
-        if s[i] == char:
-          i += 1
-          count -= 1
+      if i < len(s) and s[i] == char:
+        i += 1
+        count -= 1
     
     return count == 0
 
