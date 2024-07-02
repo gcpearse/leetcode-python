@@ -33,6 +33,7 @@ import is_subsequence
 import longest_palindrome
 import fizz_buzz
 import third_maximum_number
+import number_of_segments_in_a_string
 
 
 def test_two_sum():
@@ -359,3 +360,11 @@ def test_third_max():
   assert solution.third_max([3, 2, 1]) == 1
   assert solution.third_max([1, 2]) == 2
   assert solution.third_max([2, 2, 3, 1]) == 1
+
+
+def test_count_segments():
+
+  solution = number_of_segments_in_a_string.Solution()
+
+  assert solution.count_segments("Hello, my name is John") == 5
+  assert solution.count_segments("Hello") == 1
