@@ -34,6 +34,7 @@ import longest_palindrome
 import fizz_buzz
 import third_maximum_number
 import number_of_segments_in_a_string
+import arranging_coins
 
 
 def test_two_sum():
@@ -368,3 +369,13 @@ def test_count_segments():
 
   assert solution.count_segments("Hello, my name is John") == 5
   assert solution.count_segments("Hello") == 1
+
+
+def test_arrange_coins():
+
+  solution = arranging_coins.Solution()
+
+  assert solution.arrange_coins(5) == 2
+  assert solution.arrange_coins(8) == 3
+  assert solution.arrange_coins(1) == 1
+  
