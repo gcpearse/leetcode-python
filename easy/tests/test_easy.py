@@ -35,6 +35,7 @@ import fizz_buzz
 import third_maximum_number
 import number_of_segments_in_a_string
 import arranging_coins
+import find_all_numbers_disappeared_in_an_array
 
 
 def test_two_sum():
@@ -379,3 +380,10 @@ def test_arrange_coins():
   assert solution.arrange_coins(8) == 3
   assert solution.arrange_coins(1) == 1
   
+
+def test_find_disappeared_numbers():
+
+  solution = find_all_numbers_disappeared_in_an_array.Solution()
+
+  assert solution.find_disappeared_numbers([4, 3, 2, 7, 8, 2, 3, 1]) == [5, 6]
+  assert solution.find_disappeared_numbers([1, 1]) == [2]
